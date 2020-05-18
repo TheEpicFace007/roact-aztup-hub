@@ -16,5 +16,15 @@ end
 
 function title(props)
     local title = props.title;
-    return Roact.createElement("TextLabel")
+    return Roact.createElement("TextLabel",{
+        BackgroundColor3 = Color3.fromRGB(230, 20, 178);
+        BorderSizePixel = 2;
+        TextColor3 = Color3.new(1,1,1);
+        Position = UDim2.fromScale(0.2,0);
+        AnchorPoint = Vector2.new(0.2,0);
+
+        Font = Enum.Font.GothamSemibold;
+        FontSize = 20;
+        Text = title
+    })
 end
